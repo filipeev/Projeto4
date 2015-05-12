@@ -3,7 +3,6 @@ using System.Collections;
 
 public class MoveController : MonoBehaviour {
     public Vector3 goPosition;
-    public float speed;
     private Vector3 velocity = new Vector3(0.5f, 0.5f, 0.5f);
     private float smoothTime = 0.5f;
     private bool moving = false;
@@ -11,7 +10,7 @@ public class MoveController : MonoBehaviour {
     private Quaternion targetRotation;
 	// Use this for initialization
 	void Start () {
-        velocity = new Vector3(speed,speed,speed);
+	
 	}
 	
 	// Update is called once per frame
@@ -32,7 +31,7 @@ public class MoveController : MonoBehaviour {
             if (Physics.Raycast(ray, out hit))
             {
                 goPosition = hit.point;
-               // targetRotation = Quaternion.LookRotation(goPosition - transform.position);
+                targetRotation = Quaternion.LookRotation(goPosition - transform.position);
                 targetRotation.x = 0;
                 targetRotation.z = 0;
             }
@@ -41,8 +40,8 @@ public class MoveController : MonoBehaviour {
         if (moving)
         {
             transform.position = Vector3.SmoothDamp(transform.position, new Vector3(goPosition.x, 0.50f, goPosition.z), ref velocity, smoothTime, 4);
-            //transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, .05f);
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, .05f);
+
             ableMove = true; 
         }
     }
