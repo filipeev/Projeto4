@@ -61,7 +61,12 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
     <Compile Include="Assets\Scripts\LookObject.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\Menu.cs" />
+>>>>>>> bf7918007c875f222d5e869f85675c85731973d0
     <Compile Include="Assets\Scripts\MoveController.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
