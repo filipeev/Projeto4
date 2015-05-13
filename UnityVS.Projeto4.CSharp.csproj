@@ -60,7 +60,10 @@
     <Compile Include="Assets\Scripts\EnableArea.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\LookObject.cs" />
+=======
+>>>>>>> 9e303aa98cb4b585642eb8b714d52a4c511e414a
     <Compile Include="Assets\Scripts\MoveController.cs" />
   </ItemGroup>
   <ItemGroup>
