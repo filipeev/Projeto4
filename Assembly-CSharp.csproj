@@ -49,7 +49,9 @@
      <Compile Include="Assets\Scripts\EnableArea.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MoveController.cs" />
+     <Compile Include="Assets\Scripts\Pause.cs" />
      <None Include="Assets\Earthborn Troll\Shader\Alpha_Texture.shader" />
      <None Include="Assets\Earthborn Troll\Shader\DoubleSided-Light-Spec.shader" />
  <Reference Include="UnityEngine.UI">
